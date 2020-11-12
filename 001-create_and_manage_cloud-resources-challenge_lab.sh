@@ -1,11 +1,22 @@
 #! /bin/bash
 
-gcloud auth list
-gcloud config list project
+#
+# Quest: Getting Started: Create and Manage Cloud Resources
+#        https://google.qwiklabs.com/quests/120
+#
+# Lab: Getting Started: Create and Manage Cloud Resources: Challenge Lab
+#
+# This challenge lab tests your skills and knowledge from the labs in the 
+# Getting Started: Create and Manage Cloud Resources quest. You should be
+# familiar with the content of labs before attempting this lab
+#
 
 #
-# Set the default project_id, region, and zone for all resources
+echo Set the default project_id, region, and zone for all resources
 #
+
+gcloud auth list
+gcloud config list project
 
 #gcloud projects list
 DEFAULT_PROJECT=$(gcloud config get-value core/project 2> /dev/null)
